@@ -80,13 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				6EA2B31425EDA4F30047D458 /* AppDelegate */,
-				0B628193235DF03400E35CAF /* Views */,
+				6EA2B31725EDA52B0047D458 /* Constants */,
 				0B628192235DF02000E35CAF /* Controllers */,
-				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
-				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
-				0B628184235DEE8400E35CAF /* Info.plist */,
-				9DC6A409247C169E001E9AC3 /* GoogleService-Info.plist */,
-				9D48708D247D9FBD00180D30 /* Constants.swift */,
+				6EA2B31625EDA5170047D458 /* SupportingFiles */,
+				0B628193235DF03400E35CAF /* Views */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -137,6 +134,25 @@
 				0B628178235DEE8100E35CAF /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6EA2B31625EDA5170047D458 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
+				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
+				0B628184235DEE8400E35CAF /* Info.plist */,
+				9DC6A409247C169E001E9AC3 /* GoogleService-Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6EA2B31725EDA52B0047D458 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9D48708D247D9FBD00180D30 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +426,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
-				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
+				DEVELOPMENT_TEAM = QDUTEX33CU;
+				INFOPLIST_FILE = "Flash Chat iOS13/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,8 +445,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
-				INFOPLIST_FILE = "Flash Chat iOS13/Info.plist";
+				DEVELOPMENT_TEAM = QDUTEX33CU;
+				INFOPLIST_FILE = "Flash Chat iOS13/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
