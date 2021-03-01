@@ -38,7 +38,7 @@
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		66E2D5158BDBB62C689C95F5 /* Pods-Flash Chat iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.release.xcconfig"; sourceTree = "<group>"; };
 		9D48708D247D9FBD00180D30 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9D487091247E668D00180D30 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Controllers/Message.swift"; sourceTree = SOURCE_ROOT; };
+		9D487091247E668D00180D30 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "Flash Chat iOS13/Models/Message.swift"; sourceTree = SOURCE_ROOT; };
 		9D487093247E712800180D30 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		9D487094247E712800180D30 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		9DC6A409247C169E001E9AC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				6EA2B31425EDA4F30047D458 /* AppDelegate */,
+				6EA2B31B25EDA5B90047D458 /* Models */,
 				6EA2B31725EDA52B0047D458 /* Constants */,
 				0B628192235DF02000E35CAF /* Controllers */,
 				6EA2B31625EDA5170047D458 /* SupportingFiles */,
@@ -91,11 +92,10 @@
 		0B628192235DF02000E35CAF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9D487091247E668D00180D30 /* Message.swift */,
-				0B62818A235DF00000E35CAF /* WelcomeViewController.swift */,
-				0B62818C235DF00B00E35CAF /* RegisterViewController.swift */,
-				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
 				0B628190235DF01B00E35CAF /* ChatViewController.swift */,
+				0B62818E235DF01000E35CAF /* LoginViewController.swift */,
+				0B62818C235DF00B00E35CAF /* RegisterViewController.swift */,
+				0B62818A235DF00000E35CAF /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,9 +103,9 @@
 		0B628193235DF03400E35CAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0B62817C235DEE8100E35CAF /* Main.storyboard */,
 				9D487093247E712800180D30 /* MessageCell.swift */,
 				9D487094247E712800180D30 /* MessageCell.xib */,
+				0B62817C235DEE8100E35CAF /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,10 +139,10 @@
 		6EA2B31625EDA5170047D458 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				9DC6A409247C169E001E9AC3 /* GoogleService-Info.plist */,
+				0B628184235DEE8400E35CAF /* Info.plist */,
 				0B62817F235DEE8400E35CAF /* Assets.xcassets */,
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
-				0B628184235DEE8400E35CAF /* Info.plist */,
-				9DC6A409247C169E001E9AC3 /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -153,6 +153,14 @@
 				9D48708D247D9FBD00180D30 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		6EA2B31B25EDA5B90047D458 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D487091247E668D00180D30 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

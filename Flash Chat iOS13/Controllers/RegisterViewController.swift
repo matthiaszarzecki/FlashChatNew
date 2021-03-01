@@ -10,16 +10,16 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController {
-  
   @IBOutlet weak var emailTextfield: UITextField!
   @IBOutlet weak var passwordTextfield: UITextField!
   
   @IBAction func registerPressed(_ sender: UIButton) {
     
     if let email = emailTextfield.text,
-       let password = passwordTextfield.text {
+       let password = passwordTextfield.text
+    {
       Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-        if let e = error{
+        if let e = error {
           print("Error is -  \(e.localizedDescription)!")
           
           // create the alert
@@ -28,8 +28,13 @@ class RegisterViewController: UIViewController {
             message: e.localizedDescription,
             preferredStyle: UIAlertController.Style.alert
           )
+          
           alert.addAction(
-            UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+            UIAlertAction(
+              title: "OK",
+              style: UIAlertAction.Style.default,
+              handler: nil
+            )
           )
           self.present(alert, animated: true, completion: nil)
         } else {
